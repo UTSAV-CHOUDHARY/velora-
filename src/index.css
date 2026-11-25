@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-ivory: #F3EEE7;
+  --color-cream: #FAF7F2;
+  --color-espresso: #1E1915;
+  --color-espresso-muted: #5C4F43;
+  --color-gold: #A58347;
+  --color-gold-dark: #8B6C36;
+  --color-hairline: #E3DBD0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F3EEE7;
+    color: #1E1915;
+  }
+
+  .font-display {
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes waveformPulse {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.waveform-bar-active {
+  animation: waveformPulse 1.15s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .waveform-bar-active {
+    animation: none;
+  }
+}

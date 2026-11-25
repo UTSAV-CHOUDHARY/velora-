@@ -1,0 +1,400 @@
+import { HeroArchiveChapter, Product } from '../types';
+
+export const HERO_ARCH_IMAGE = '/src/assets/images/velora_hero_arch_1795612314709.jpg';
+export const SILK_COUTURE_IMAGE = '/src/assets/images/velora_silk_couture_1795612315607.jpg';
+export const BOTANICAL_ELIXIR_IMAGE = '/src/assets/images/velora_botanical_elixir_1795612315828.jpg';
+export const VELVET_ROUGE_IMAGE = '/src/assets/images/velora_velvet_rouge_1795612315898.jpg';
+export const RUNWAY_GOWN_IMAGE = '/src/assets/images/velora_runway_gown_1795612317814.jpg';
+export const NOCTURNE_PARFUM_IMAGE = '/src/assets/images/velora_nocturne_parfum_1795612317967.jpg';
+export const MAISON_OBJECT_IMAGE = '/src/assets/images/velora_maison_object_1795612319265.jpg';
+
+export const HERO_ARCHIVE_CHAPTERS: HeroArchiveChapter[] = [
+  {
+    id: 'silk-couture',
+    index: '01',
+    title: 'SILK DRESSES',
+    subtitle: 'Pure Ivory Silk & Dark Velvet Gowns',
+    category: 'Clothing',
+    image: SILK_COUTURE_IMAGE,
+    featuredProductId: 'vlr-01',
+    accentNote: 'Hand-woven pure Mulberry silk · 42 hours of bespoke stitching',
+  },
+  {
+    id: 'botanical-serum',
+    index: '02',
+    title: 'GLOW SERUMS',
+    subtitle: 'Kashmiri Saffron & Natural Face Serum',
+    category: 'Skin & Scents',
+    image: BOTANICAL_ELIXIR_IMAGE,
+    featuredProductId: 'vlr-09',
+    accentNote: 'Cold-pressed natural botanicals · Frosted amber glass bottle',
+  },
+  {
+    id: 'velvet-crimson',
+    index: '03',
+    title: 'MATTE LIPSTICK',
+    subtitle: 'No. 03 Royal Crimson Velvet Lipstick',
+    category: 'Beauty',
+    image: VELVET_ROUGE_IMAGE,
+    featuredProductId: 'vlr-05',
+    accentNote: 'Refillable brass tube · Enriched with rosehip & kokum butter',
+  },
+];
+
+export const PRODUCTS: Product[] = [
+  // CLOTHING (4 Products)
+  {
+    id: 'vlr-01',
+    sku: 'VLR-CL-001',
+    name: 'Two-Tone Draped Silk Gown',
+    category: 'Clothing',
+    subCategory: 'Signature Wear',
+    priceINR: 245000,
+    image: HERO_ARCH_IMAGE,
+    imagePosition: 'object-[50%_38%]',
+    editionNote: 'Limited Edition',
+    tagline: 'Ivory silk and rich espresso velvet draped together for a graceful evening look.',
+    description:
+      'Hand-draped over 42 hours in our Mumbai studio, this signature gown blends soft champagne-ivory Mulberry silk with deep espresso velvet for effortless evening elegance.',
+    craftDetails: [
+      '100% Pure Mulberry Silk & Silk-Velvet',
+      'Built-in tailored inner waist support',
+      'Fine hand-finished seams throughout',
+      'Comes in a protective archival garment box',
+    ],
+    variants: [
+      { label: 'XS' },
+      { label: 'S' },
+      { label: 'M' },
+      { label: 'L' },
+      { label: 'Custom Tailoring', priceDeltaINR: 25000 },
+    ],
+    inStock: true,
+    featuredOrder: 1,
+  },
+  {
+    id: 'vlr-02',
+    sku: 'VLR-CL-002',
+    name: 'Espresso Velvet Evening Gown',
+    category: 'Clothing',
+    subCategory: 'Party & Reception',
+    priceINR: 215000,
+    image: RUNWAY_GOWN_IMAGE,
+    imagePosition: 'object-[16%_28%]',
+    editionNote: 'Limited Stock',
+    tagline: 'One-shoulder draped bell sleeve in espresso velvet with an ivory satin side fall.',
+    description:
+      'Tailored for cocktail nights and wedding receptions, featuring a flowing draped sleeve in rich velvet paired with soft pleated ivory satin.',
+    craftDetails: [
+      '82% Pure Silk-Velvet, 18% Heavy Satin',
+      'Weighted hemline for smooth movement',
+      'Hidden side zip with brass hook closure',
+    ],
+    variants: [
+      { label: 'XS' },
+      { label: 'S' },
+      { label: 'M' },
+      { label: 'L' },
+      { label: 'Custom Tailoring', priceDeltaINR: 22000 },
+    ],
+    inStock: true,
+    featuredOrder: 4,
+  },
+  {
+    id: 'vlr-03',
+    sku: 'VLR-CL-003',
+    name: 'Ivory Satin Wrap Dress',
+    category: 'Clothing',
+    subCategory: 'Evening Dress',
+    priceINR: 185000,
+    image: RUNWAY_GOWN_IMAGE,
+    imagePosition: 'object-[84%_28%]',
+    tagline: 'Flowing ivory satin waist drape layered over a sleek espresso column silhouette.',
+    description:
+      'Designed for clean, timeless poise, the Wrap Dress crosses soft satin panels across the waist to give a flattering, elongated fit.',
+    craftDetails: [
+      'Double-layered pure satin & silk crepe',
+      'Hand-stitched neat edges',
+      'Made to order in our Mumbai & Delhi studios',
+    ],
+    variants: [{ label: 'XS' }, { label: 'S' }, { label: 'M' }, { label: 'L' }],
+    inStock: true,
+    featuredOrder: 7,
+  },
+  {
+    id: 'vlr-04',
+    sku: 'VLR-CL-004',
+    name: 'Pure Mulberry Silk Stole',
+    category: 'Clothing',
+    subCategory: 'Silk Wraps',
+    priceINR: 42000,
+    image: SILK_COUTURE_IMAGE,
+    imagePosition: 'object-center',
+    tagline: 'Soft champagne-ivory pure silk wrap made to drape easily over gowns or sarees.',
+    description:
+      'Woven from fine long-strand Mulberry silk yarns, this lightweight stole drapes smoothly over evening dresses, sarees, or winter jackets with a natural sheen.',
+    craftDetails: [
+      '30-momme pure Mulberry silk satin',
+      'Hand-rolled borders by skilled karigars',
+      'Size: 210 cm × 75 cm',
+    ],
+    variants: [
+      { label: 'Champagne Ivory', swatchHex: '#EFE6D8' },
+      { label: 'Warm Sand', swatchHex: '#D7C4AD' },
+      { label: 'Espresso Brown', swatchHex: '#3B2D24' },
+    ],
+    inStock: true,
+    featuredOrder: 8,
+  },
+
+  // BEAUTY (4 Products)
+  {
+    id: 'vlr-05',
+    sku: 'VLR-BT-001',
+    name: 'Royal Crimson Matte Lipstick',
+    category: 'Beauty',
+    subCategory: 'Lipsticks',
+    priceINR: 5400,
+    image: VELVET_ROUGE_IMAGE,
+    imagePosition: 'object-center',
+    editionNote: 'Bestseller Shade 03',
+    tagline: 'Smooth velvet-matte lip colour enriched with rosehip oil and kokum butter.',
+    description:
+      'Comes in a solid, refillable brushed-brass tube engraved with the VELORA mark. Rich pigment crafted specially to suit warm and deep Indian skin tones.',
+    craftDetails: [
+      'Made with Indian kokum butter & rosehip oil',
+      '100% paraben-free and non-drying formula',
+      'Refillable solid brass magnetic case',
+    ],
+    variants: [
+      { label: '03 Royal Crimson', swatchHex: '#7A1622' },
+      { label: '01 Rosewood', swatchHex: '#9E5855' },
+      { label: '07 Spiced Plum', swatchHex: '#562226' },
+      { label: 'Refill Only', priceDeltaINR: -1600 },
+    ],
+    inStock: true,
+    featuredOrder: 3,
+  },
+  {
+    id: 'vlr-06',
+    sku: 'VLR-BT-002',
+    name: 'Velvet Lip & Cheek Tint',
+    category: 'Beauty',
+    subCategory: 'Cheek & Lip',
+    priceINR: 6200,
+    image: VELVET_ROUGE_IMAGE,
+    imagePosition: 'object-[50%_78%]',
+    tagline: 'Light whipped tint that blends smoothly on cheeks and lips for a natural flush.',
+    description:
+      'Made for humid Indian weather, this airy whipped tint sets softly onto cheeks and lips without feeling sticky or cakey.',
+    craftDetails: [
+      'Plant squalane, pomegranate & moringa butter',
+      'Sweat-resistant soft matte finish',
+      '12 g frosted glass jar with brass lid',
+    ],
+    variants: [
+      { label: '03 Velvet Crimson', swatchHex: '#7D1924' },
+      { label: '05 Terracotta Rose', swatchHex: '#A7584B' },
+    ],
+    inStock: true,
+    featuredOrder: 10,
+  },
+  {
+    id: 'vlr-07',
+    sku: 'VLR-BT-003',
+    name: 'Silk Glow Skin Primer',
+    category: 'Beauty',
+    subCategory: 'Face Glow',
+    priceINR: 8900,
+    image: SILK_COUTURE_IMAGE,
+    imagePosition: 'object-[65%_45%]',
+    tagline: 'Lightweight silk-peptide primer for a fresh, natural glow under makeup.',
+    description:
+      'This hydrating primer blurs open pores and gives a soft golden glow without any white cast—wear it alone or under foundation.',
+    craftDetails: [
+      'Silk amino peptides, white tea & niacinamide',
+      'Warm golden mineral glow (zero white cast)',
+      '30 ml glass pump bottle',
+    ],
+    variants: [
+      { label: '01 Ivory Pearl', swatchHex: '#F3E7D8' },
+      { label: '02 Warm Honey', swatchHex: '#E4CEB2' },
+      { label: '03 Golden Bronze', swatchHex: '#C7A27C' },
+    ],
+    inStock: true,
+    featuredOrder: 11,
+  },
+  {
+    id: 'vlr-08',
+    sku: 'VLR-BT-004',
+    name: 'Saffron Lip Balm & Brass Set',
+    category: 'Beauty',
+    subCategory: 'Lip Care',
+    priceINR: 7400,
+    image: BOTANICAL_ELIXIR_IMAGE,
+    imagePosition: 'object-[38%_55%]',
+    tagline: 'Nourishing saffron lip balm paired with a smooth brushed-brass applicator.',
+    description:
+      'Softens dry lips overnight or before matte lipstick using pure Kashmiri saffron, wild honey, and cold-pressed sweet almond oil.',
+    craftDetails: [
+      'Wild honey, Kashmiri saffron & calendula balm',
+      'Weighted brushed brass lip applicator',
+      'Dermatologically tested for daily use',
+    ],
+    variants: [{ label: 'Standard Set' }, { label: 'With Name Initials', priceDeltaINR: 1500 }],
+    inStock: true,
+    featuredOrder: 14,
+  },
+
+  // SKIN & SCENTS (4 Products)
+  {
+    id: 'vlr-09',
+    sku: 'VLR-SS-001',
+    name: 'Saffron & Rosehip Glow Serum',
+    category: 'Skin & Scents',
+    subCategory: 'Face Serum',
+    priceINR: 19500,
+    image: BOTANICAL_ELIXIR_IMAGE,
+    imagePosition: 'object-[36%_48%]',
+    editionNote: 'Bestseller',
+    tagline: 'Concentrated glow serum made with Kashmiri saffron, neroli, and wild rosehip.',
+    description:
+      'Our signature skincare formula, slow-infused in dark frosted amber glass to protect natural vitamins, brighten dull skin, and restore softness.',
+    craftDetails: [
+      'Pampore Saffron, Neroli Blossom & Himalayan Rosehip',
+      '99.4% natural cold-pressed plant ingredients',
+      'UV-protective frosted amber glass bottle',
+    ],
+    variants: [
+      { label: '30 ml Dropper' },
+      { label: '50 ml Pump Bottle', priceDeltaINR: 6800 },
+      { label: '100 ml Reserve', priceDeltaINR: 15500 },
+    ],
+    inStock: true,
+    featuredOrder: 2,
+  },
+  {
+    id: 'vlr-10',
+    sku: 'VLR-SS-002',
+    name: 'Sandalwood Dry Body Oil',
+    category: 'Skin & Scents',
+    subCategory: 'Body Care',
+    priceINR: 14800,
+    image: BOTANICAL_ELIXIR_IMAGE,
+    imagePosition: 'object-[64%_42%]',
+    tagline: 'Non-sticky golden body oil scented with Mysore sandalwood, fig leaf, and jojoba.',
+    description:
+      'Absorbs into skin in seconds without feeling oily, leaving a healthy sheen and a calming aroma of warm sandalwood and fresh citrus.',
+    craftDetails: [
+      'Cold-pressed golden jojoba & sweet almond oil',
+      'Pure steam-distilled Mysore sandalwood',
+      'Available in 50 ml and 100 ml bottles',
+    ],
+    variants: [
+      { label: '50 ml Bottle' },
+      { label: '100 ml Large Bottle', priceDeltaINR: 7500 },
+    ],
+    inStock: true,
+    featuredOrder: 6,
+  },
+  {
+    id: 'vlr-11',
+    sku: 'VLR-SS-003',
+    name: 'Nocturne Oud Luxury Perfume',
+    category: 'Skin & Scents',
+    subCategory: 'Perfume',
+    priceINR: 28500,
+    image: NOCTURNE_PARFUM_IMAGE,
+    imagePosition: 'object-center',
+    editionNote: 'Long-Lasting 32% Oil',
+    tagline: 'Aged Assam oud, smoked vanilla, saffron, and warm amber in a crystal bottle.',
+    description:
+      'Crafted using traditional Kannauj blending methods and aged for six months. High perfume oil concentration built to last over 12 hours.',
+    craftDetails: [
+      'Top Notes: Bergamot, Kashmiri Saffron',
+      'Heart Notes: Kannauj Rose, Frankincense',
+      'Base Notes: Aged Assam Oud, Vanilla, Amber',
+    ],
+    variants: [
+      { label: '50 ml Crystal Bottle' },
+      { label: '100 ml Crystal Bottle', priceDeltaINR: 11000 },
+    ],
+    inStock: true,
+    featuredOrder: 5,
+  },
+  {
+    id: 'vlr-12',
+    sku: 'VLR-SS-004',
+    name: 'Golden Amber Perfume Spray',
+    category: 'Skin & Scents',
+    subCategory: 'Perfume',
+    priceINR: 23500,
+    image: HERO_ARCH_IMAGE,
+    imagePosition: 'object-[70%_78%]',
+    tagline: 'Warm golden amber, soft iris flower, and creamy tonka bean in frosted glass.',
+    description:
+      'A rich yet wearable everyday signature fragrance inspired by warm afternoon sunlight on natural stone and soft silk.',
+    craftDetails: [
+      '28% high-concentration perfume oil',
+      'Iris root, amber resin & roasted tonka',
+      'Brushed gold fine-mist spray cap',
+    ],
+    variants: [
+      { label: '50 ml Bottle' },
+      { label: '100 ml Bottle', priceDeltaINR: 9000 },
+    ],
+    inStock: true,
+    featuredOrder: 9,
+  },
+
+  // HOME (2 Products)
+  {
+    id: 'vlr-13',
+    sku: 'VLR-HM-001',
+    name: 'Carved Stone Scented Candle',
+    category: 'Home',
+    subCategory: 'Home Decor',
+    priceINR: 32000,
+    image: MAISON_OBJECT_IMAGE,
+    imagePosition: 'object-[36%_52%]',
+    editionNote: 'Natural Stone Jar',
+    tagline: 'Hand-carved natural stone jar filled with wild fig, myrrh, and pure beeswax.',
+    description:
+      'Turned from solid natural stone so every jar has its own unique grain. Once finished, reuse the stone container on your dressing or coffee table.',
+    craftDetails: [
+      '380 g clean-burning beeswax & soy blend',
+      '65-hour burn time with pure cotton wick',
+      'Reusable hand-carved natural stone jar',
+    ],
+    variants: [
+      { label: 'Standard (380 g)' },
+      { label: 'Large Salon Size (900 g)', priceDeltaINR: 18500 },
+    ],
+    inStock: true,
+    featuredOrder: 12,
+  },
+  {
+    id: 'vlr-14',
+    sku: 'VLR-HM-002',
+    name: 'Cashmere & Silk Sofa Throw',
+    category: 'Home',
+    subCategory: 'Bedding & Living',
+    priceINR: 62000,
+    image: MAISON_OBJECT_IMAGE,
+    imagePosition: 'object-[68%_58%]',
+    tagline: 'Soft espresso-taupe cashmere and silk blanket throw with a brushed brass buckle.',
+    description:
+      'Hand-loomed from fine Himalayan cashmere and Mulberry silk, finished with a tailored strap and solid brass clasp for home or travel.',
+    craftDetails: [
+      '70% Fine Himalayan Cashmere, 30% Mulberry Silk',
+      'Engraved brushed brass travel buckle',
+      'Size: 190 cm × 140 cm',
+    ],
+    variants: [
+      { label: 'Espresso Taupe', swatchHex: '#6E5E53' },
+      { label: 'Raw Ivory', swatchHex: '#EAE2D6' },
+    ],
+    inStock: true,
+    featuredOrder: 13,
+  },
+];

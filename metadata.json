@@ -1,0 +1,6 @@
+{
+  "name": "VELORA — Luxury Couture, Beauty & Botanical Elixirs",
+  "description": "VELORA India: The Autumn-Winter Reserve featuring sculpted silk couture, clean beauty, and botanical elixirs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
